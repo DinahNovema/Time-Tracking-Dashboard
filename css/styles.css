@@ -1,20 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
-
 body {
-  padding: 0;
   background-color: hsl(226, 43%, 10%);
-  font-family: "Rubik", sans-serif;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+main {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin: 50px;
 }
 .profile-wrapper {
   display: flex;
   flex-direction: column;
   background-color: hsl(235, 46%, 20%);
   border-radius: 15px;
-  width: 345px;
+  width: 350px;
 }
 .profile {
   display: flex;
@@ -22,7 +25,7 @@ body {
   justify-content: space-evenly;
   background-color: hsl(246, 80%, 60%);
   height: 120px;
-  width: 345px;
+  width: 350px;
   border-radius: 15px;
   padding: 0;
 }
@@ -69,18 +72,56 @@ button:hover {
   cursor: pointer;
   color: white;
 }
+.activity-wrapper-work,
+.activity-wrapper-play,
+.activity-wrapper-study,
+.activity-wrapper-exercise,
+.activity-wrapper-social,
+.activity-wrapper-selfcare {
+  border-radius: 15px;
+  margin-top: 30px;
+  height: 190px;
+  width: 350px;
+  display: flex;
+  align-items: flex-end;
+}
 .activity-wrapper-work {
   background: url(/images/icon-work.svg);
   background-repeat: no-repeat;
   background-position: right top;
   background-color: hsl(15, 100%, 70%);
-  border-radius: 15px;
-  margin-top: 30px;
-  height: 190px;
-  width: 345px;
-  display: flex;
-  align-items: flex-end;
 }
+.activity-wrapper-play {
+  background: url(/images/icon-play.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-color: hsl(195, 74%, 62%);
+}
+.activity-wrapper-study {
+  background: url(/images/icon-study.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-color: hsl(348, 100%, 68%);
+}
+.activity-wrapper-exercise {
+  background: url(/images/icon-exercise.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-color: hsl(145, 58%, 55%);
+}
+.activity-wrapper-social {
+  background: url(/images/icon-social.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-color: hsl(264, 64%, 52%);
+}
+.activity-wrapper-selfcare {
+  background: url(/images/icon-self-care.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-color: hsl(43, 84%, 65%);
+}
+
 .main-card {
   position: relative;
   width: 100%;
@@ -113,67 +154,80 @@ button:hover {
 .previous {
   color: hsl(236, 100%, 87%);
   font-weight: 400;
+  font-size: 18px;
   position: absolute;
   bottom: 20px;
   right: 30px;
 }
-.activity-wrapper-play {
-  background: url(/images/icon-play.svg);
-  background-repeat: no-repeat;
-  background-position: right top;
-  background-color: hsl(195, 74%, 62%);
-  border-radius: 15px;
-  margin-top: 30px;
-  height: 190px;
-  width: 345px;
-  display: flex;
-  align-items: flex-end;
-}
-.activity-wrapper-study {
-  background: url(/images/icon-study.svg);
-  background-repeat: no-repeat;
-  background-position: right top;
-  background-color: hsl(348, 100%, 68%);
-  border-radius: 15px;
-  margin-top: 30px;
-  height: 190px;
-  width: 345px;
-  display: flex;
-  align-items: flex-end;
-}
-.activity-wrapper-exercise {
-  background: url(/images/icon-exercise.svg);
-  background-repeat: no-repeat;
-  background-position: right top;
-  background-color: hsl(145, 58%, 55%);
-  border-radius: 15px;
-  margin-top: 30px;
-  height: 190px;
-  width: 345px;
-  display: flex;
-  align-items: flex-end;
-}
-.activity-wrapper-social {
-  background: url(/images/icon-social.svg);
-  background-repeat: no-repeat;
-  background-position: right top;
-  background-color: hsl(264, 64%, 52%);
-  border-radius: 15px;
-  margin-top: 30px;
-  height: 190px;
-  width: 345px;
-  display: flex;
-  align-items: flex-end;
-}
-.activity-wrapper-selfcare {
-  background: url(/images/icon-self-care.svg);
-  background-repeat: no-repeat;
-  background-position: right top;
-  background-color: hsl(43, 84%, 65%);
-  border-radius: 15px;
-  margin-top: 30px;
-  height: 190px;
-  width: 345px;
-  display: flex;
-  align-items: flex-end;
+
+@media only screen and (min-width: 1400px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+  .profile-wrapper {
+    height: 530px;
+    width: 250px;
+    margin: 15px;
+  }
+  .profile {
+    height: 70%;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+  }
+  .profile img {
+    margin: -35px 0 0 -130px;
+  }
+  .profile p {
+    margin: 15px;
+  }
+  .profile span {
+    color: white;
+    font-weight: 300;
+    font-size: 2.5em;
+  }
+  .activity-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .activity-wrapper-work,
+  .activity-wrapper-play,
+  .activity-wrapper-study,
+  .activity-wrapper-exercise,
+  .activity-wrapper-social,
+  .activity-wrapper-selfcare {
+    margin: 15px;
+    height: 250px;
+    width: 250px;
+  }
+  .main-card {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    border-radius: 15px;
+    background-color: hsl(235, 46%, 20%);
+    display: flex;
+  }
+  .buttons {
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 20px;
+  }
+  .card-title {
+    margin-bottom: 12px;
+  }
+
+  .previous {
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+  }
 }
