@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+body {
+  padding: 0;
+  background-color: hsl(226, 43%, 10%);
+  font-family: "Rubik", sans-serif;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.profile-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 15px;
+  width: 345px;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: hsl(246, 80%, 60%);
+  height: 120px;
+  width: 345px;
+  border-radius: 15px;
+  padding: 0;
+}
+.profile p {
+  color: hsl(236, 100%, 87%);
+  font-weight: 400;
+  font-size: 16px;
+  padding-right: 15px;
+}
+.profile span {
+  color: white;
+  font-weight: 300;
+  font-size: 1.7em;
+  display: block;
+  margin-top: 5px;
+}
+.profile img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin: 5px;
+}
+.buttons {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0;
+}
+
+button {
+  list-style: none;
+  border: none;
+  background-color: hsl(235, 46%, 20%);
+  font-weight: 400;
+  font-size: 20px;
+  font-family: "Rubik", sans-serif;
+  color: hsl(235, 45%, 61%);
+  padding-top: 10px;
+}
+.menu button:active,
+button:hover {
+  cursor: pointer;
+  color: white;
+}
+.activity-wrapper-work {
+  background: url(/images/icon-work.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-color: hsl(15, 100%, 70%);
+  border-radius: 15px;
+  margin-top: 30px;
+  height: 190px;
+  width: 345px;
+  display: flex;
+  align-items: flex-end;
+}
+.main-card {
+  position: relative;
+  width: 100%;
+  height: 70%;
+  border-radius: 15px;
+  background-color: hsl(235, 46%, 20%);
+  display: flex;
+}
+.info-left {
+  color: white;
+  padding-left: 30px;
+}
+.card-title {
+  font-weight: 500;
+  font-size: 18px;
+  margin: 30px 0 -30px 0;
+}
+.card-duration {
+  font-weight: 300;
+  font-size: 40px;
+}
+.hidden-info {
+  color: hsl(236, 100%, 87%);
+  font-weight: 500;
+  font-size: 30px;
+  position: absolute;
+  top: -15px;
+  right: 30px;
+}
+.previous {
+  color: hsl(236, 100%, 87%);
+  font-weight: 400;
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+}
+.activity-wrapper-play {
+  background: url(/images/icon-play.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-color: hsl(195, 74%, 62%);
+  border-radius: 15px;
+  margin-top: 30px;
+  height: 190px;
+  width: 345px;
+  display: flex;
+  align-items: flex-end;
+}
+.activity-wrapper-study {
+  background: url(/images/icon-study.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-color: hsl(348, 100%, 68%);
+  border-radius: 15px;
+  margin-top: 30px;
+  height: 190px;
+  width: 345px;
+  display: flex;
+  align-items: flex-end;
+}
+.activity-wrapper-exercise {
+  background: url(/images/icon-exercise.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-color: hsl(145, 58%, 55%);
+  border-radius: 15px;
+  margin-top: 30px;
+  height: 190px;
+  width: 345px;
+  display: flex;
+  align-items: flex-end;
+}
+.activity-wrapper-social {
+  background: url(/images/icon-social.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-color: hsl(264, 64%, 52%);
+  border-radius: 15px;
+  margin-top: 30px;
+  height: 190px;
+  width: 345px;
+  display: flex;
+  align-items: flex-end;
+}
+.activity-wrapper-selfcare {
+  background: url(/images/icon-self-care.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-color: hsl(43, 84%, 65%);
+  border-radius: 15px;
+  margin-top: 30px;
+  height: 190px;
+  width: 345px;
+  display: flex;
+  align-items: flex-end;
+}
