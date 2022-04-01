@@ -14,6 +14,9 @@ Users should be able to:
 
 ### Screenshot
 
+![time-tracking](https://user-images.githubusercontent.com/74897464/161284383-00ab4bc9-5bcf-483d-9eaf-be2dcbe3baeb.jpeg)
+
+
 ### Links
 
 - Live Site URL: https://time-tracking-dashboard-dinah.netlify.app/
