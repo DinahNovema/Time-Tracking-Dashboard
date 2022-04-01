@@ -6,6 +6,7 @@ monthly.classList.remove("selected-btn");
 weekly.classList.remove("selected-btn");
 
 const hours = document.querySelectorAll(".card-duration");
+const previous = document.querySelectorAll(".previous");
 
 const getDaily = () => {
   fetch("../data.json")
@@ -15,6 +16,8 @@ const getDaily = () => {
     .then((data) => {
       hours.forEach((acc, i) => {
         hours[i].innerHTML = data[i].timeframes.daily.current + "hrs";
+        previous[i].innerHTML =
+          "Last Daily - " + data[i].timeframes.daily.previous + "hrs";
       });
     });
 };
@@ -27,6 +30,8 @@ const getWeekly = () => {
     .then((data) => {
       hours.forEach((acc, i) => {
         hours[i].innerHTML = data[i].timeframes.weekly.current + "hrs";
+        previous[i].innerHTML =
+          "Last Weekly - " + data[i].timeframes.weekly.previous + "hrs";
       });
     });
 };
@@ -39,6 +44,8 @@ const getMonthly = () => {
     .then((data) => {
       hours.forEach((acc, i) => {
         hours[i].innerHTML = data[i].timeframes.monthly.current + "hrs";
+        previous[i].innerHTML =
+          "Last Monthly - " + data[i].timeframes.monthly.previous + "hrs";
       });
     });
 };
